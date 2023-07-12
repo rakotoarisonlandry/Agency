@@ -1,0 +1,12 @@
+.Content{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: Second 25s infinite;
+  animation-timing-function: linear;
+  transition: all ;
+}
+
+  @keyframes Second {
+    from {right: -1500px;}
+    to {right:1400px;} }
