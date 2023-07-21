@@ -19,7 +19,6 @@ function Header(){
                     <a href="#"><button className="bg-[#f6632d] my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]">Get A Queue</button></a>    
                 </div>
             </div>
-
     );
 }
 export default Header;

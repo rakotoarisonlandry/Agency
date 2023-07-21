@@ -6,10 +6,16 @@ import Home from "./component/homePage";
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <Home />
+      <div style={{
+        backgroundImage: "linear-gradient(#fff, #f7fce6)",
+        minHeight: "100vh", 
+      }}>
+        <Header />
+        <Home />
+      </div>
     </React.Fragment>
   );
 }
 
 export default App;
+
