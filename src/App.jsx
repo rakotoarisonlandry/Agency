@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import './assets/styles/animation.css'
-import Header  from "./component/header";
-function App() {
+import Header from "./component/header";
+import Home from "./component/homePage";
 
+function App() {
   return (
     <React.Fragment>
-      <Header/>
+      <Header />
+      <Home />
     </React.Fragment>
   );
 }
+
 export default App;
