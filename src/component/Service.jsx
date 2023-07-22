@@ -1,5 +1,5 @@
 import React from "react";
-
+import ServicePage from "./ServicePage";
 function Service() {
   return (
     <React.Fragment>
@@ -33,6 +33,9 @@ function Service() {
             }}
           ></div>
         </div>
+      </div>
+      <div>
+        <ServicePage/>
       </div>
     </React.Fragment>
   );
