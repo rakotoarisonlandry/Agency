@@ -10,7 +10,7 @@ function ServicePage() {
           <CardContent>
             <Grid container spacing={2} alignItems="center" justifyContent="center">
               <Grid item>
-                <TaskAltIcon />
+                <TaskAltIcon/>
               </Grid>
               <Grid item>
                 <Typography variant="h5" component="h2">
@@ -18,7 +18,7 @@ function ServicePage() {
                 </Typography>
               </Grid>
               <Grid item>
-                <TaskAltIcon />
+                <TaskAltIcon/>
               </Grid>
             </Grid>
           </CardContent>

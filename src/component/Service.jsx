@@ -1,41 +1,17 @@
 import React from "react";
 import ServicePage from "./ServicePage";
+
 function Service() {
   return (
     <React.Fragment>
-      <div style={{ textAlign: "center" }}>
-        <div
-          style={{
-            width: "50%", // Largeur de la bordure
-            margin: "0 auto", // Centre la bordure horizontalement
-            paddingTop: "50px", // Espace supplémentaire en haut du texte
-            paddingBottom: "10px", // Espace sous le texte
-            position: "relative", // Position relative pour positionner la bordure
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "32px",
-              fontWeight: "bold",
-            }}
-          >
-            Our Best Services
-          </h1>
-          <div
-            style={{
-              position: "absolute",
-              bottom: "0",
-              left: "50%",
-              transform: "translateX(-50%)",
-              width: "50px", // Largeur de la bordure
-              height: "5px", // Hauteur de la bordure
-              backgroundColor: "#ca7c56", // Couleur de la bordure
-            }}
-          ></div>
+      <div className="text-center">
+        <div className="w-1/2 mx-auto pt-16 pb-10 relative">
+          <h1 className="text-2xl font-bold">Our Best Services</h1>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-500"></div>
         </div>
       </div>
       <div>
-        <ServicePage/>
+        <ServicePage />
       </div>
     </React.Fragment>
   );

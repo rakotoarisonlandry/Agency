@@ -4,13 +4,11 @@ import Header from "./component/header";
 import Home from "./component/homePage";
 import Sponsor from "./component/sponsor";
 import Service from "./component/Service";
+
 function App() {
   return (
     <React.Fragment>
-      <div style={{
-        backgroundImage: "linear-gradient(rgb(54 197 240) ,#fff )",/*rgb(54 197 240)*/ 
-        minHeight: "100vh", 
-      }}>
+      <div className="min-h-screen bg-gradient-to-b from-blue-300 to-white">
         <Header />
         <Home />
       </div>
@@ -18,10 +16,7 @@ function App() {
         <Sponsor/>
       </div>
 
-      <div style={{
-        backgroundImage: "linear-gradient(#fff, #f7fce6)",
-        minHeight: "100vh"
-      }}>
+      <div className="min-h-screen bg-gradient-to-b from-white to-yellow-200">
         <Service/>
       </div>
     </React.Fragment>
@@ -29,4 +24,3 @@ function App() {
 }
 
 export default App;
-
