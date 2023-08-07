@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, CardContent, Typography, Stack, Grid } from "@mui/material";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
-import ServicePageComponent from "./ServicePageSection";
-function ServicePage() {
+
+function ServicePageComponent() {
   return (
-    <React.Fragment>
+    <>
       <Stack
         spacing={{ xs: 1, sm: 2 }}
         direction="row"
@@ -64,9 +64,8 @@ function ServicePage() {
           </CardContent>
         </Card>
       </Stack>
-      <ServicePageComponent/>
-    </React.Fragment>
+    </>
   );
 }
 
-export default ServicePage;
+export default ServicePageComponent;
