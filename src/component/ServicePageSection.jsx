@@ -13,7 +13,7 @@ function ServicePageComponent() {
         alignItems="center"
         justifyContent="center"
       >
-        <Card sx={{ marginBottom: 10 }}>
+        <Card sx={{ marginBottom: 10 ,marginRight: 5 ,marginTop:5}}>
           <CardContent >
             <Grid
               container
@@ -38,7 +38,7 @@ function ServicePageComponent() {
             </Grid>
           </CardContent>
         </Card>
-        <Card >
+        <Card sx={{ marginBottom: 10 ,marginRight: 5 ,marginTop:5}}>
           <CardContent>
             <Grid
               container
