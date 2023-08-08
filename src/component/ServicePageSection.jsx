@@ -13,8 +13,8 @@ function ServicePageComponent() {
         alignItems="center"
         justifyContent="center"
       >
-        <Card>
-          <CardContent>
+        <Card sx={{ marginBottom: 10 }}>
+          <CardContent >
             <Grid
               container
               spacing={2}
@@ -38,11 +38,12 @@ function ServicePageComponent() {
             </Grid>
           </CardContent>
         </Card>
-        <Card>
+        <Card >
           <CardContent>
             <Grid
               container
               spacing={2}
+              
               alignItems="center"
               justifyContent="center"
             >

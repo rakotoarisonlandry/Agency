@@ -13,7 +13,7 @@ function ServicePage() {
         alignItems="center"
         justifyContent="center"
       >
-        <Card>
+        <Card >
           <CardContent>
             <Grid
               container
@@ -38,7 +38,7 @@ function ServicePage() {
             </Grid>
           </CardContent>
         </Card>
-        <Card>
+        <Card >
           <CardContent>
             <Grid
               container
