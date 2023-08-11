@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button, TextareaAutosize, Snackbar } from '@mui/material';
+import { TextField, Button, TextareaAutosize, Snackbar, Typography } from '@mui/material';
 import { Alert } from '@mui/lab';
 
 function Validation() {
@@ -19,6 +19,8 @@ function Validation() {
 
   return (
     <div>
+    <Typography variant="h1">GET in Touch </Typography>
+    <p>Lorem ipsum</p>
       <TextField
         label="Champ 1"
         value={textInput1}
