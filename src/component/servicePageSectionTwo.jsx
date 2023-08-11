@@ -1,24 +1,16 @@
 import React from "react";
 import { Card, CardContent, Typography, Stack, Grid } from "@mui/material";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
-import ServicePageSectionTwo from "./servicePageSectionTwo";
 
-function ServicePageComponent() {
-  return (
-    <>
-      <Stack
-        spacing={{ xs: 1, sm: 2 }}
-        direction="row"
-        useFlexGap
-        flexWrap="wrap"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <Card sx={{ marginBottom: 10 ,marginRight: 5 ,marginTop:5,paddingY:0,paddingX:1.2}}>
-          <CardContent >
+function ServicePageSectionTwo(){
+    return (
+        <React.Fragment>
+             <Card sx={{ marginBottom: 10 ,marginRight: 5 ,marginTop:5,paddingY:0,paddingX:1.2}}>
+          <CardContent>
             <Grid
               container
               spacing={2}
+              
               alignItems="center"
               justifyContent="center"
             >
@@ -39,10 +31,8 @@ function ServicePageComponent() {
             </Grid>
           </CardContent>
         </Card>
-        <ServicePageSectionTwo/>
-      </Stack>
-    </>
-  );
+        </React.Fragment>
+    )
 }
 
-export default ServicePageComponent;
+export default ServicePageSectionTwo;

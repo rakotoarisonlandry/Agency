@@ -9,7 +9,7 @@
             <h1 style={{ fontSize: "39px", fontWeight: "bold"  }}>
               Best Solution For <br /> Your <span style={{ color: "#4842c8" }}>Business</span> <br />Startup
             </h1>
-            <p style={{ marginTop: "25px", fontSize: "12px"  }}>
+            <p style={{ marginTop: "30px", fontSize: "12px"  }}>
               Discover a world of amazing products at our E-commerce <br/>store. Shop with confidence and find the perfect items <br/>for your lifestyle.
             </p>
             <a href="#">
