@@ -95,9 +95,11 @@ function Validation() {
         variant="contained"
         onClick={handleSubmit}
         style={{
-          marginTop: "16px",
-          paddingLeft: "22px",
-          paddingRight: "22px",
+            marginTop:"15px",
+          paddingTop: "9px",
+          paddingBottom:"9px",
+          paddingLeft: "25px",
+          paddingRight: "25px",
           backgroundColor: "#3f3ac9",
           fontWeight: "bold",
         }}

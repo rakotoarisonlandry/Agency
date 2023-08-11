@@ -12,14 +12,26 @@ function Team() {
         spacing="220px"
         marginTop="100px"
       >
+        <TeamSection />
         <div style={{ textAlign: "left", marginBottom: "100px" }}>
-          <p style={{ marginTop: "15px",marginBottom:"15px" ,fontSize: "20px" ,color:"#4745bb",fontWeight: "bold"}}>Our Team</p>
+          <p
+            style={{
+              marginTop: "15px",
+              marginBottom: "15px",
+              fontSize: "20px",
+              color: "#4745bb",
+              fontWeight: "bold",
+            }}
+          >
+            Our Team
+          </p>
           <h1 style={{ fontSize: "45px", fontWeight: "bold" }}>
-            Discussion Your<br /> Project Our Team
+            Discussion Your
+            <br /> Project Our Team
           </h1>
-          <p style={{ marginTop: "25px", fontSize: "12px",opacity:"0.7" }}>
-            Discover a world of amazing products at our E-commerce 
-            store. Shop<br /> with confidence and find the perfect items <br />
+          <p style={{ marginTop: "25px", fontSize: "12px", opacity: "0.7" }}>
+            Discover a world of amazing products at our E-commerce store. Shop
+            <br /> with confidence and find the perfect items <br />
             for your lifestyle.
           </p>
           <a href="#">
@@ -39,7 +51,6 @@ function Team() {
             </button>
           </a>
         </div>
-        <TeamSection/>
       </Stack>
     </React.Fragment>
   );
