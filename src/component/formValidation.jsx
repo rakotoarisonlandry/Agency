@@ -5,6 +5,7 @@ import { Alert } from '@mui/lab';
 function Validation() {
   const [textInput1, setTextInput1] = useState('');
   const [textInput2, setTextInput2] = useState('');
+  const [textInput3, setTextInput3] = useState('');
   const [textareaValue, setTextareaValue] = useState('');
   const [showWarning, setShowWarning] = useState(false);
 
@@ -18,26 +19,35 @@ function Validation() {
   };
 
   return (
-    <div>
-      <Typography variant="h1">Get in Touch</Typography>
+    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+      <Typography variant="h2">Get in Touch</Typography>
       <p>If you have any questions or feedback, please don't hesitate to reach out to us using the form below. We'd love to hear from you!</p>
+      <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
+        <TextField
+          label=" Name"
+          value={textInput1}
+          onChange={(e) => setTextInput1(e.target.value)}
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          label="first name"
+          value={textInput2}
+          onChange={(e) => setTextInput2(e.target.value)}
+          fullWidth
+          margin="normal"
+        />
+      </div>
       <TextField
-        label="Field 1"
-        value={textInput1}
-        onChange={(e) => setTextInput1(e.target.value)}
-        fullWidth
-        margin="normal"
-      />
-      <TextField
-        label="Field 2"
-        value={textInput2}
-        onChange={(e) => setTextInput2(e.target.value)}
+        label="mail"
+        value={textInput3}
+        onChange={(e) => setTextInput3(e.target.value)}
         fullWidth
         margin="normal"
       />
       <TextareaAutosize
         minRows={3}
-        placeholder="Textarea"
+        placeholder="Give your suggestion"
         value={textareaValue}
         onChange={(e) => setTextareaValue(e.target.value)}
         style={{ width: '100%', marginTop: '16px', padding: '8px' }}
