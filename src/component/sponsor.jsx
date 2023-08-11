@@ -30,8 +30,8 @@ function Sponsor() {
                 src={sponsor.image}
                 alt={sponsor.id}
                 style={{ width: "120px" }}
-                initial="initial" // Utilisez le nom de variante "initial"
-                whileHover="hover" // Utilisez le nom de variante "hover"
+                initial="initial" 
+                whileHover="hover" 
                 variants={imageVariants}
               />
             </a>

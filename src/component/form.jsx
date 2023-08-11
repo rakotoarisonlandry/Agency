@@ -11,7 +11,7 @@ function Form() {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        spacing={4} // Adjust the spacing as needed
+        spacing={16} // Adjust the spacing as needed
         paddingTop="150px"
         width="100%"
       >
