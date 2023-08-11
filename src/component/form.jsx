@@ -1,7 +1,7 @@
 import { VpnLock } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import React from "react";
-import IllustrationForm from "../assets/image/Home_C.gif";
+import IllustrationForm from "../assets/image/form.png";
 import Validation from "./formValidation";
 
 function Form() {
@@ -11,7 +11,7 @@ function Form() {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        spacing={15} // Adjust the spacing as needed
+        spacing={4} // Adjust the spacing as needed
         paddingTop="150px"
         width="100%"
       >
@@ -19,7 +19,7 @@ function Form() {
           <img
             src={IllustrationForm}
             alt="Illustration"
-            width="100%"
+            width="70%"
             height="auto"
           />
         </div>

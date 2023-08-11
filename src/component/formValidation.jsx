@@ -18,20 +18,28 @@ function Validation() {
 
   const handleSubmit = () => {
     if (!textInput1 || !textInput2 || !textareaValue || !textInput3) {
-      setShowWarning(true);
-      setShowSuccess(false);
-    } else {
-      setShowWarning(false);
-      setShowSuccess(true);
-      // Faire quelque chose avec les données du formulaire ici
-
-      // Réinitialiser les champs après la soumission
-      setTextInput1("");
-      setTextInput2("");
-      setTextInput3("");
-      setTextareaValue("");
-    }
-  };
+        setShowWarning(true);
+        setShowSuccess(false);
+        setTimeout(() => {
+          setShowWarning(false);
+        }, 5000); // Cacher le message après 5 secondes
+      } else {
+        setShowWarning(false);
+        setShowSuccess(true);
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 5000); // Cacher le message après 5 secondes
+  
+        // Faire quelque chose avec les données du formulaire ici
+  
+        // Réinitialiser les champs après la soumission
+        setTextInput1("");
+        setTextInput2("");
+        setTextInput3("");
+        setTextareaValue("");
+      }
+    };
+  
 
   return (
     <div style={{ maxWidth: "700px", margin: "0 auto" }}>

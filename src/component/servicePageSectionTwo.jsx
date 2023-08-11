@@ -5,7 +5,7 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 function ServicePageSectionTwo(){
     return (
         <React.Fragment>
-             <Card sx={{ marginBottom: 10 ,marginRight: 5 ,marginTop:5,paddingY:0,paddingX:1.2}}>
+             <Card sx={{ marginBottom: 10 ,marginRight: 5 ,marginTop:5,paddingY:0,paddingX:1.2,width:"26%",}}>
           <CardContent>
             <Grid
               container
@@ -15,11 +15,11 @@ function ServicePageSectionTwo(){
               justifyContent="center"
             >
               <Grid item>
-                <TaskAltIcon />
+              <TaskAltIcon style={{ color: "#3ee34e", border: "0px solid #e56e44", borderRadius: "0%", padding: "0px" }} />
               </Grid>
               <Grid item>
               <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >
-                  Create Idea Business
+                  Business Analysis
                 </Typography>
                 <Typography variant="h6" component="h8" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
                   Lorem ipsum dolor

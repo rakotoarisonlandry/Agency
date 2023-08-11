@@ -17,7 +17,7 @@ function ServicePage() {
         alignItems="center"
         justifyContent="center"
       >
-        <Card sx={{ marginBottom: 5, marginRight: 5, marginTop: 5 ,paddingY:0,paddingX:1.2}}>
+        <Card sx={{ marginBottom: 5, marginRight: 5, marginTop: 5 ,paddingY:0,paddingX:1.2 ,width:"26%",}}>
           <CardContent>
             <Grid
               container
@@ -26,7 +26,7 @@ function ServicePage() {
               justifyContent="center"
             >
               <Grid item>
-                <TaskAltIcon style={{ color: "#e56e44", border: "2px solid #e56e44", borderRadius: "50%", padding: "4px" }} />
+                <TaskAltIcon style={{ color: "#e56e44", border: "0px solid #e56e44", borderRadius: "0%", padding: "0px" }} />
               </Grid>
               <Grid item>
                 <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >

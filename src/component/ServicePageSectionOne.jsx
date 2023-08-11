@@ -12,6 +12,7 @@ function ServicePageSectionOne() {
           marginTop: 5,
           paddingY: 0,
           paddingX: 1.2,
+          width:"26%",
         }}
       >
         <CardContent>
@@ -22,11 +23,11 @@ function ServicePageSectionOne() {
             justifyContent="center"
           >
             <Grid item>
-              <TaskAltIcon />
+            <TaskAltIcon style={{ color: "#f56ab6", border: "0px solid #e56e44", borderRadius: "0%", padding: "0px" }} />
             </Grid>
             <Grid item>
             <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >
-                  Create Idea Business
+                  Smart Solutions
                 </Typography>
                 <Typography variant="h6" component="h8" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
                   Lorem ipsum dolor
