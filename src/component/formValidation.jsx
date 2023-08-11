@@ -14,13 +14,22 @@ function Validation() {
   const [textInput3, setTextInput3] = useState("");
   const [textareaValue, setTextareaValue] = useState("");
   const [showWarning, setShowWarning] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = () => {
-    if (!textInput1 || !textInput2 || !textareaValue) {
+    if (!textInput1 || !textInput2 || !textareaValue || !textInput3) {
       setShowWarning(true);
+      setShowSuccess(false);
     } else {
       setShowWarning(false);
+      setShowSuccess(true);
       // Faire quelque chose avec les données du formulaire ici
+
+      // Réinitialiser les champs après la soumission
+      setTextInput1("");
+      setTextInput2("");
+      setTextInput3("");
+      setTextareaValue("");
     }
   };
 
@@ -32,20 +41,20 @@ function Validation() {
       >
         Get in Touch
       </Typography>
-      <p style={{ opacity: "0.5",fontSize:"13px" }}>
+      <p style={{ opacity: "0.5", fontSize: "13px" }}>
         If you have any questions or feedback, please don't hesitate to reach
         out to us using the form below. We'd love to hear from you!
       </p>
       <div style={{ display: "flex", gap: "16px", marginBottom: "16px" }}>
         <TextField
-          label=" Name"
+          label="Name"
           value={textInput1}
           onChange={(e) => setTextInput1(e.target.value)}
           fullWidth
           margin="normal"
         />
         <TextField
-          label="first name"
+          label="First Name"
           value={textInput2}
           onChange={(e) => setTextInput2(e.target.value)}
           fullWidth
@@ -53,7 +62,7 @@ function Validation() {
         />
       </div>
       <TextField
-        label="mail"
+        label="Email"
         value={textInput3}
         onChange={(e) => setTextInput3(e.target.value)}
         fullWidth
@@ -70,7 +79,7 @@ function Validation() {
           padding: "8px",
           backgroundColor: "#edf5f6",
           border: "2px solid #b5bcbc",
-          borderRadius: '4px'
+          borderRadius: "4px",
         }}
       />
 
@@ -90,6 +99,11 @@ function Validation() {
       {showWarning && (
         <Alert severity="warning" style={{ marginTop: "16px" }}>
           Please fill out all the fields in the form.
+        </Alert>
+      )}
+      {showSuccess && (
+        <Alert severity="success" style={{ marginTop: "16px" }}>
+          Form submitted successfully!
         </Alert>
       )}
     </div>
