@@ -19,17 +19,17 @@ function Validation() {
 
   return (
     <div>
-    <Typography variant="h1">GET in Touch </Typography>
-    <p>If you have any questions or feedback, please don't hesitate to reach out to us using the form below. We'd love to hear from you!</p>
+      <Typography variant="h1">Get in Touch</Typography>
+      <p>If you have any questions or feedback, please don't hesitate to reach out to us using the form below. We'd love to hear from you!</p>
       <TextField
-        label="Champ 1"
+        label="Field 1"
         value={textInput1}
         onChange={(e) => setTextInput1(e.target.value)}
         fullWidth
         margin="normal"
       />
       <TextField
-        label="Champ 2"
+        label="Field 2"
         value={textInput2}
         onChange={(e) => setTextInput2(e.target.value)}
         fullWidth
@@ -47,7 +47,7 @@ function Validation() {
       </Button>
       {showWarning && (
         <Alert severity="warning" style={{ marginTop: '16px' }}>
-        Please fill out all the fields in the form.
+          Please fill out all the fields in the form.
         </Alert>
       )}
     </div>
