@@ -20,7 +20,7 @@ function Validation() {
   return (
     <div>
     <Typography variant="h1">GET in Touch </Typography>
-    <p>Enter your information in this formulaire </p>
+    <p>If you have any questions or feedback, please don't hesitate to reach out to us using the form below. We'd love to hear from you!</p>
       <TextField
         label="Champ 1"
         value={textInput1}
@@ -43,11 +43,11 @@ function Validation() {
         style={{ width: '100%', marginTop: '16px', padding: '8px' }}
       />
       <Button variant="contained" color="primary" onClick={handleSubmit} style={{ marginTop: '16px' }}>
-        Soumettre
+        Submit
       </Button>
       {showWarning && (
         <Alert severity="warning" style={{ marginTop: '16px' }}>
-          Veuillez remplir tous les champs du formulaire.
+        Please fill out all the fields in the form.
         </Alert>
       )}
     </div>
