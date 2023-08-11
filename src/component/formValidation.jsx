@@ -20,7 +20,7 @@ function Validation() {
   return (
     <div>
     <Typography variant="h1">GET in Touch </Typography>
-    <p></p>
+    <p>Enter your information in this formulaire </p>
       <TextField
         label="Champ 1"
         value={textInput1}
