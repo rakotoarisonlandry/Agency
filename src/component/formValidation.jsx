@@ -45,7 +45,7 @@ function Validation() {
     <div style={{ maxWidth: "700px", margin: "0 auto" }}>
       <Typography
         variant="h2"
-        style={{ fontWeight: "bold", fontSize: "45px", paddingBottom: "15px" }}
+        style={{ fontWeight: "bold", fontSize: "45px", paddingBottom: "15px" ,background: "linear-gradient(43deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}
       >
         Get in Touch
       </Typography>
@@ -100,7 +100,7 @@ function Validation() {
           paddingBottom:"9px",
           paddingLeft: "25px",
           paddingRight: "25px",
-          backgroundColor: "#3f3ac9",
+          background: "linear-gradient(43deg, #e0559e, #4842c8)",
           fontWeight: "bold",
         }}
       >

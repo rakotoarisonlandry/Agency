@@ -28,7 +28,7 @@ function Team() {
             style={{ fontSize: "45px", fontWeight: "bold", lineHeight: "1.2" }}
           >
             Discussion  Your 
-            <br /> <span style={{ background: "linear-gradient(45deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}>Project</span> Our Team
+            <br /> <span style={{ background: "linear-gradient(60deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}>Project</span> Our Team
           </h1>
 
           <p style={{ marginTop: "25px", fontSize: "12px", opacity: "0.7" }}>
