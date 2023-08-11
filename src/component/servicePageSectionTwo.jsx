@@ -18,11 +18,11 @@ function ServicePageSectionTwo(){
                 <TaskAltIcon />
               </Grid>
               <Grid item>
-                <Typography variant="h4" component="h2">
-                  Great Idea Business
+              <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >
+                  Create Idea Business
                 </Typography>
-                <Typography variant="h5" component="h2">
-                  lorem ipsum dolor
+                <Typography variant="h6" component="h8" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
+                  Lorem ipsum dolor
                 </Typography>
               </Grid>
               <Grid item>

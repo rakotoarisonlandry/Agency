@@ -17,7 +17,7 @@ function Team() {
           <h1 style={{ fontSize: "45px", fontWeight: "bold" }}>
             Discussion Your<br /> Project Our Team
           </h1>
-          <p style={{ marginTop: "25px", fontSize: "12px" }}>
+          <p style={{ marginTop: "25px", fontSize: "12px",opacity:"0.7" }}>
             Discover a world of amazing products at our E-commerce 
             store. Shop<br /> with confidence and find the perfect items <br />
             for your lifestyle.

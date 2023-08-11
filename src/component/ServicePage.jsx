@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Stack, Grid } from "@mui/material";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import ServicePageComponent from "./ServicePageSection";
 import ServicePageSectionOne from "./ServicePageSectionOne";
+
 function ServicePage() {
   return (
     <React.Fragment>
@@ -24,14 +25,14 @@ function ServicePage() {
               justifyContent="center"
             >
               <Grid item>
-                <TaskAltIcon />
+                <TaskAltIcon style={{ color: "#e56e44", border: "2px solid #e56e44", borderRadius: "50%", padding: "4px" }} />
               </Grid>
               <Grid item>
-                <Typography variant="h4" component="h2">
-                  Great Idea Business
+                <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >
+                  Create Idea Business
                 </Typography>
-                <Typography variant="h5" component="h2">
-                  lorem ipsum dolor
+                <Typography variant="h6" component="h8" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
+                  Lorem ipsum dolor
                 </Typography>
               </Grid>
               <Grid item>

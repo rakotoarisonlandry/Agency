@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
-import { TextField, Button, TextareaAutosize, Snackbar, Typography } from '@mui/material';
-import { Alert } from '@mui/lab';
+import React, { useState } from "react";
+import {
+  TextField,
+  Button,
+  TextareaAutosize,
+  Snackbar,
+  Typography,
+} from "@mui/material";
+import { Alert } from "@mui/lab";
 
 function Validation() {
-  const [textInput1, setTextInput1] = useState('');
-  const [textInput2, setTextInput2] = useState('');
-  const [textInput3, setTextInput3] = useState('');
-  const [textareaValue, setTextareaValue] = useState('');
+  const [textInput1, setTextInput1] = useState("");
+  const [textInput2, setTextInput2] = useState("");
+  const [textInput3, setTextInput3] = useState("");
+  const [textareaValue, setTextareaValue] = useState("");
   const [showWarning, setShowWarning] = useState(false);
 
   const handleSubmit = () => {
@@ -19,10 +25,18 @@ function Validation() {
   };
 
   return (
-    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-      <Typography variant="h2">Get in Touch</Typography>
-      <p>If you have any questions or feedback, please don't hesitate to reach out to us using the form below. We'd love to hear from you!</p>
-      <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
+    <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+      <Typography
+        variant="h2"
+        style={{ fontWeight: "bold", fontSize: "45px", paddingBottom: "15px" }}
+      >
+        Get in Touch
+      </Typography>
+      <p style={{ opacity: "0.5",fontSize:"13px" }}>
+        If you have any questions or feedback, please don't hesitate to reach
+        out to us using the form below. We'd love to hear from you!
+      </p>
+      <div style={{ display: "flex", gap: "16px", marginBottom: "16px" }}>
         <TextField
           label=" Name"
           value={textInput1}
@@ -50,13 +64,31 @@ function Validation() {
         placeholder="Give your suggestion"
         value={textareaValue}
         onChange={(e) => setTextareaValue(e.target.value)}
-        style={{ width: '100%', marginTop: '16px', padding: '8px' }}
+        style={{
+          width: "100%",
+          marginTop: "16px",
+          padding: "8px",
+          backgroundColor: "#edf5f6",
+          border: "2px solid #b5bcbc",
+          borderRadius: '4px'
+        }}
       />
-      <Button variant="contained"  onClick={handleSubmit} style={{ marginTop: '16px',paddingLeft:'22px',paddingRight:'22px',backgroundColor:'#3f3ac9' ,fontWeight:'bold' }}>
+
+      <Button
+        variant="contained"
+        onClick={handleSubmit}
+        style={{
+          marginTop: "16px",
+          paddingLeft: "22px",
+          paddingRight: "22px",
+          backgroundColor: "#3f3ac9",
+          fontWeight: "bold",
+        }}
+      >
         Submit
       </Button>
       {showWarning && (
-        <Alert severity="warning" style={{ marginTop: '16px' }}>
+        <Alert severity="warning" style={{ marginTop: "16px" }}>
           Please fill out all the fields in the form.
         </Alert>
       )}
