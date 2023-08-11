@@ -19,7 +19,7 @@ function Validation() {
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
       <Typography variant="h2">Get in Touch</Typography>
       <p>If you have any questions or feedback, please don't hesitate to reach out to us using the form below. We'd love to hear from you!</p>
       <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
@@ -52,7 +52,7 @@ function Validation() {
         onChange={(e) => setTextareaValue(e.target.value)}
         style={{ width: '100%', marginTop: '16px', padding: '8px' }}
       />
-      <Button variant="contained" color="primary" onClick={handleSubmit} style={{ marginTop: '16px' }}>
+      <Button variant="contained"  onClick={handleSubmit} style={{ marginTop: '16px',paddingLeft:'22px',paddingRight:'22px',backgroundColor:'#3f3ac9' ,fontWeight:'bold' }}>
         Submit
       </Button>
       {showWarning && (
