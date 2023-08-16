@@ -49,11 +49,11 @@ function Validation() {
       >
         Get in Touch
       </Typography>
-      <p style={{ opacity: "0.5", fontSize: "13px" }}>
+      <p style={{ opacity: "0.5", fontSize: "13px",paddingBottom:"15px" }}>
         If you have any questions or feedback, please don't hesitate to reach
         out to us using the form below. We'd love to hear from you!
       </p>
-      <div style={{ display: "flex", gap: "16px", marginBottom: "16px" }}>
+      <div style={{ display: "flex", gap: "16px", paddingBottom: "3px" }}>
         <TextField
           label="Name"
           value={textInput1}
