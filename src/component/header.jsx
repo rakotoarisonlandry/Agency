@@ -19,6 +19,9 @@ function Header() {
       </div>
       <div className="items-center">
         <a href="#">
+        <button className="bg-[#f6632d] my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]">
+            Change to dark
+          </button>
           <button className="bg-[#f6632d] my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]">
             Get A Queue
           </button>

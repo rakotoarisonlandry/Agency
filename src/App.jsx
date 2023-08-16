@@ -6,9 +6,10 @@ import Sponsor from "./component/sponsor";
 import Service from "./component/Service";
 import Team from "./component/teampage";
 import Form from "./component/form";
+import {ThemeProvider } from "./Tool/ThemeContext"
 function App() {
   return (
-    <React.Fragment>
+    <ThemeProvider>
       <div className="min-h-screen bg-gradient-to-b from-blue-300 to-white">
         <Header />
         <Home />
@@ -28,7 +29,7 @@ function App() {
       <div className="min-h-screen bg-gradient-to-t from-[#e0eeef] to-white ">
         <Form/>
       </div>
-    </React.Fragment>
+    </ThemeProvider>
   );
 }
 
