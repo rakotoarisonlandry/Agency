@@ -29,7 +29,7 @@ function ServicePageSectionOne() {
             <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >
                   Smart Solutions
                 </Typography>
-                <Typography variant="h6" component="h8" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
+                <Typography variant="h6" component="h6" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
                   Lorem ipsum dolor
                 </Typography>
             </Grid>

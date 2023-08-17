@@ -47,7 +47,7 @@ function ServicePageSectionTwo() {
               </Typography>
               <Typography
                 variant="h6"
-                component="h8"
+                component="h6"
                 style={{ fontSize: "17px", paddingLeft: "8px", opacity: "0.7" }}
               >
                 Lorem ipsum dolor
