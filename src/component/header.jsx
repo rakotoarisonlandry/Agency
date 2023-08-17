@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/image/logo.png";
 import { useThemeContext } from "../Tool/ThemeContext";
+
 function Header() {
   const { toggleTheme, theme } = useThemeContext();
 
@@ -14,7 +15,7 @@ function Header() {
     >
       <div className="items-center text-[22px] pt-[30px] text-[#4842c8] font-bold flex space-x-[10px]">
         <img src={logo} alt="Logo" style={{ width: "40px" }} />
-        <span>Agency</span>
+        <span>Agencys</span>
       </div>
       <div
         className={`items-center pt-[18px] ${

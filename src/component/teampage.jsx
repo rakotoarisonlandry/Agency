@@ -40,7 +40,7 @@ function Team() {
             <button
               style={{
                 padding: "10px 20px",
-                backgroundColor: "#4842c8",
+                backgroundColor: "#c952a4",
                 color: "#fff",
                 border: "none",
                 borderRadius: "5px",

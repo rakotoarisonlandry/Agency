@@ -1,5 +1,6 @@
 import React from "react";
 import ServicePage from "./ServicePage";
+import "../assets/styles/app.css";
 
 function Service() {
   return (

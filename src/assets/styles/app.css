@@ -1,0 +1,50 @@
+
+.service {
+  background-image: url("../image/wave.svg");
+  background-size: cover;
+  width: 100vh;
+  height: 500px;
+
+}
+.blur-background {
+  background-image: url("chemin/vers/votre/image.jpg");
+  filter: blur(0.5px);
+  /* Autres styles de fond */
+}
+
+.form-container {
+   background-color: #efefef; /* Fallback color */
+  background-color: rgba(239,239,239, 0.5); /* Black w/opacity/see-through */
+  font-weight: bold;
+  position: absolute;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+
+}
+
+
+
+/* .Content {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: Second 25s infinite;
+  animation-timing-function: linear; 
+  transition: all;
+}
+
+@keyframes Second {
+  from {
+    right: -1500px;
+  }
+  to {
+    right: 1400px;
+  }
+} */
+
+
