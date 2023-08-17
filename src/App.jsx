@@ -12,7 +12,7 @@ import bg from "../src/assets/image/svg.png";
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gradient-to-b from-blue-300 to-white">
+      <div className="min-h-screen ">
         <Header />
         <Home />
       </div>

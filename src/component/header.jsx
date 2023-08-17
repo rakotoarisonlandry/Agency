@@ -15,7 +15,7 @@ function Header() {
     >
       <div className="items-center text-[22px] pt-[30px] text-[#4842c8] font-bold flex space-x-[10px]">
         <img src={logo} alt="Logo" style={{ width: "40px" }} />
-        <span>Agencys</span>
+        <span>Agency</span>
       </div>
       <div
         className={`items-center pt-[18px] ${
@@ -46,13 +46,13 @@ function Header() {
       </div>
       <div className="items-center">
         <a href="#">
-          <button
+          {/* <button
             className="bg-[#ffb300] my-[0px] mx-[7px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]"
             onClick={toggleTheme} // Appeler la fonction toggleTheme lorsque le bouton est cliqué
           >
             Toggle Theme
-          </button>
-          <button className="bg-[#f6632d] my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]">
+          </button> */}
+          <button className="bg-[#4842c8] my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]">
             Get A Queue
           </button>
         </a>
