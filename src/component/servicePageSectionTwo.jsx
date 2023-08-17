@@ -12,7 +12,7 @@ function ServicePageSectionTwo() {
           marginTop: 5,
           paddingY: 0,
           paddingX: 1.2,
-          width: "26%",
+          width: "26%",backgroundColor:"rgba(239,239,239, 0.5)"
         }}
       >
         <CardContent>

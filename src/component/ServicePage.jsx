@@ -17,7 +17,7 @@ function ServicePage() {
         alignItems="center"
         justifyContent="center"
       >
-        <Card sx={{ marginBottom: 5, marginRight: 5, marginTop: 5 ,paddingY:0,paddingX:1.2 ,width:"26%",}}>
+        <Card sx={{ marginBottom: 5, marginRight: 5, marginTop: 5 ,paddingY:0,paddingX:1.2 ,width:"26%",backgroundColor:"rgba(239,239,239, 0.5)"}}>
           <CardContent>
             <Grid
               container

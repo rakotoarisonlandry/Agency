@@ -5,9 +5,9 @@
     return (
       <React.Fragment>
         <Stack direction="row" alignItems="flex-end" justifyContent="center" spacing="140px" marginTop="100px">
-          <div style={{ textAlign: "left", marginBottom: "0px",marginTop:"130px" }}>
+          <div style={{ textAlign: "left", marginBottom: "0px",marginTop:"60px" }}>
             <h1 style={{ fontSize: "39px", fontWeight: "bold"  }}>
-              Best Solution For <br /> Your <span style={{ background: "linear-gradient(60deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}>Business</span> <br />Startup
+              Best Solution For <br /> Your <span style={{ background: "linear-gradient(60deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}>Business</span> <br />Startup:
             </h1>
             <p style={{ marginTop: "30px", marginBottom:"30px", fontSize: "12px",opacity:"0.7"}}>
               Discover a world of amazing products at our E-commerce <br/>store. Shop with confidence and find the perfect items <br/>for your lifestyle.

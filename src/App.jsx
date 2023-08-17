@@ -8,13 +8,13 @@ import Team from "./component/teampage";
 import Form from "./component/form";
 import { ThemeProvider } from "./Tool/ThemeContext";
 import bg from "../src/assets/image/bg.png";
-import illu from "../src/assets/image/illu.svg";
+import illu from "../src/assets/image/illu.png";
 
 function App() {
   return (
     <ThemeProvider>
       <div
-        className="min-h-screen "
+        className="min-h-screen bg-[#f7f7f7] "
         style={{
           backgroundImage: `url(${illu})`,
           backgroundPosition: "top",
@@ -25,12 +25,12 @@ function App() {
         <Header />
         <Home />
       </div>
-      <div>
+      <div className=" " >
         <Sponsor />
       </div>
 
       <div
-        className="min-h-screen bg-gradient-to-b from-[#e0eeef] to-white service"
+        className="min-h-screen bg-[#f7f7f7]"
         style={{ width: "100%" }}
       >
         <Service />
