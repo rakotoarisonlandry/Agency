@@ -39,7 +39,6 @@ function Validation() {
         setTextareaValue("");
       }
     };
-  
 
   return (
     <div style={{ maxWidth: "700px", margin: "0 auto" }}>
