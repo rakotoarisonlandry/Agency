@@ -5,7 +5,7 @@
     return (
       <React.Fragment>
         <Stack direction="row" alignItems="flex-end" justifyContent="center" spacing="140px" marginTop="100px">
-          <div style={{ textAlign: "left", marginBottom: "2px" }}>
+          <div style={{ textAlign: "left", marginBottom: "0px",marginTop:"130px" }}>
             <h1 style={{ fontSize: "39px", fontWeight: "bold"  }}>
               Best Solution For <br /> Your <span style={{ background: "linear-gradient(60deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}>Business</span> <br />Startup
             </h1>
@@ -30,7 +30,7 @@
             </a>
           </div>
           <div style={{ marginBottom: "2px" }}>
-          <img src={Illustration2} alt="Illustration" width="580px" height="500px"/>
+          <img src={Illustration2} alt="Illustration" width="590px" height="500px"/>
           </div>
         </Stack>
       </React.Fragment>

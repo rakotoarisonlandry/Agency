@@ -8,11 +8,20 @@ import Team from "./component/teampage";
 import Form from "./component/form";
 import { ThemeProvider } from "./Tool/ThemeContext";
 import bg from "../src/assets/image/bg.png";
+import illu from "../src/assets/image/illu.svg";
 
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen ">
+      <div
+        className="min-h-screen "
+        style={{
+          backgroundImage: `url(${illu})`,
+          backgroundPosition: "top",
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Header />
         <Home />
       </div>
@@ -37,11 +46,28 @@ function App() {
           backgroundImage: `url(${bg})`,
           backgroundPosition: "bottom",
           backgroundSize: "100%",
-          backgroundRepeat:"no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       >
         <Form />
-         <p style={{textAlign:"center" ,color:"white" ,marginBottom:"0px",paddingTop:"270px",fontSize:"16px"}}>2023 <a href="https://github.com/rakotoarisonlandry/Agency" style={{fontSize:"15px"}}> @rakotoarisonlandry</a></p>
+        <p
+          style={{
+            textAlign: "center",
+            color: "white",
+            marginBottom: "0px",
+            paddingTop: "270px",
+            fontSize: "16px",
+          }}
+        >
+          2023{" "}
+          <a
+            href="https://github.com/rakotoarisonlandry/Agency"
+            style={{ fontSize: "15px" }}
+          >
+            {" "}
+            @rakotoarisonlandry
+          </a>
+        </p>
       </div>
     </ThemeProvider>
   );

@@ -13,7 +13,7 @@ function Header() {
         isLightTheme ? "bg-light" : "bg-dark"
       }`}
     >
-      <div className="items-center text-[22px] pt-[30px] text-[#4842c8] font-bold flex space-x-[10px]">
+      <div className="items-center text-[22px] pt-[30px] text-[#00f] font-bold flex space-x-[10px]">
         <img src={logo} alt="Logo" style={{ width: "40px" }} />
         <span>Agency</span>
       </div>
@@ -22,11 +22,7 @@ function Header() {
           isLightTheme ? "text-light" : "text-dark"
         }`}
       >
-        <ul
-          className={`flex space-x-[50px] font-bold opacity-[0.8] ${
-            isLightTheme ? "text-light" : "text-dark"
-          }`}
-        >
+        <ul className="flex space-x-[50px] font-bold opacity-[0.8] text-[#fff]">
           <li>
             <a href="#">Home</a>
           </li>
@@ -46,12 +42,6 @@ function Header() {
       </div>
       <div className="items-center">
         <a href="#">
-          {/* <button
-            className="bg-[#ffb300] my-[0px] mx-[7px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]"
-            onClick={toggleTheme} // Appeler la fonction toggleTheme lorsque le bouton est cliqué
-          >
-            Toggle Theme
-          </button> */}
           <button className="bg-[#4842c8] my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]">
             Get A Queue
           </button>
