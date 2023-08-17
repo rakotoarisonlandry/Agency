@@ -7,7 +7,7 @@ import Service from "./component/Service";
 import Team from "./component/teampage";
 import Form from "./component/form";
 import { ThemeProvider } from "./Tool/ThemeContext";
-import bg from "../src/assets/image/svg.png";
+import bg from "../src/assets/image/bg.png";
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
         }}
       >
         <Form />
-         <p style={{textAlign:"center" ,color:"white" ,marginBottom:"0px",paddingTop:"100px",fontSize:"16px"}}>2023 <a href="https://github.com/rakotoarisonlandry/Agency" style={{fontSize:"15px"}}> @rakotoarisonlandry</a></p>
+         <p style={{textAlign:"center" ,color:"white" ,marginBottom:"0px",paddingTop:"270px",fontSize:"16px"}}>2023 <a href="https://github.com/rakotoarisonlandry/Agency" style={{fontSize:"15px"}}> @rakotoarisonlandry</a></p>
       </div>
     </ThemeProvider>
   );

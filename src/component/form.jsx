@@ -1,7 +1,7 @@
 import { VpnLock } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import React from "react";
-import IllustrationForm from "../assets/image/form.png";
+import IllustrationForm from "../assets/image/process.svg";
 import Validation from "./formValidation";
 
 function Form() {
@@ -19,7 +19,7 @@ function Form() {
           <img
             src={IllustrationForm}
             alt="Illustration"
-            width="70%"
+            width="90%"
             height="auto"
           />
         </div>

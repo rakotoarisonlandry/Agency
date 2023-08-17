@@ -1,5 +1,5 @@
 import React from "react";
-import Illustration2 from "../assets/image/Home_B.png";
+import Illustration2 from "../assets/image/discution.svg";
 
 function TeamSection() {
   return (
@@ -8,8 +8,8 @@ function TeamSection() {
         <img
           src={Illustration2}
           alt="Illustration"
-          width="500px"
-          height="500px"
+          width="540px"
+          height="540px"
         />
       </div>
     </React.Fragment>
