@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack } from "@mui/system";
 import TeamSection from "./teamPageSection";
-import Illustration2 from "../assets/image/Home_B.png";
+
 function Team() {
   return (
     <React.Fragment>
