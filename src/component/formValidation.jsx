@@ -67,14 +67,14 @@ function Validation() {
         </p>
         <div style={{ display: "flex", gap: "16px", paddingBottom: "3px" }}>
           <TextField
-            label="Name"
+            label="Name*"
             value={textInput1}
             onChange={(e) => setTextInput1(e.target.value)}
             fullWidth
             margin="normal"
           />
           <TextField
-            label="First Name"
+            label="First Name*"
             value={textInput2}
             onChange={(e) => setTextInput2(e.target.value)}
             fullWidth
@@ -82,7 +82,7 @@ function Validation() {
           />
         </div>
         <TextField
-          label="Email"
+          label="Email*"
           value={textInput3}
           onChange={(e) => setTextInput3(e.target.value)}
           fullWidth
@@ -90,7 +90,7 @@ function Validation() {
         />
         <TextareaAutosize
           minRows={3}
-          placeholder="Give your suggestion"
+          placeholder="Give your suggestion*"
           value={textareaValue}
           onChange={(e) => setTextareaValue(e.target.value)}
           style={{

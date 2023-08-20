@@ -1,4 +1,3 @@
-import { VpnLock } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import React from "react";
 import IllustrationForm from "../assets/image/process.svg";
