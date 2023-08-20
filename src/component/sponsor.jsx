@@ -43,7 +43,7 @@ function Sponsor() {
 
   return (
     <React.Fragment>
-      <section >
+      <Section >
         <Stack
           direction="row"
           justifyContent="center"
@@ -68,7 +68,7 @@ function Sponsor() {
             </Box>
           ))}
         </Stack>
-      </section>
+      </Section>
     </React.Fragment>
   );
 }
