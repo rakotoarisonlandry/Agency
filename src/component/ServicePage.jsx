@@ -6,6 +6,7 @@ import ServicePageSectionOne from "./ServicePageSectionOne";
 
 
 function ServicePage() {
+  
   return (
     <React.Fragment>
       <Stack
@@ -42,9 +43,9 @@ function ServicePage() {
             </Grid>
           </CardContent>
         </Card>
-        <ServicePageSectionOne />
+        {/* <ServicePageSectionOne /> */}
       </Stack>
-      <ServicePageComponent />
+      {/* <ServicePageComponent /> */}
     </React.Fragment>
   );
 }
