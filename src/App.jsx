@@ -16,7 +16,7 @@ function App() {
         className="min-h-screen bg-[#f7f7f7]"
         style={{
           backgroundImage: `url(${illu})`,
-          backgroundPosition: "0 -240px",
+          backgroundPosition: "0 -300px",
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           
