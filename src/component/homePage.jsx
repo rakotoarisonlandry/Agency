@@ -1,7 +1,7 @@
-import { Stack } from "@mui/system";
 import React from "react";
 import Illustration2 from "../assets/image/Home.svg";
 import { motion } from "framer-motion";
+
 
 function AnimatedText({ text, delay, gradient }) {
   return (
@@ -40,44 +40,27 @@ function AnimatedText({ text, delay, gradient }) {
 }
 
 function Home() {
-  const baseDelay = 0.2; // Adjust this delay based on your preference
-
   return (
     <React.Fragment>
-      <Stack
-        direction="row"
-        alignItems="flex-end"
-        justifyContent="center"
-        spacing="140px"
-        marginTop="100px"
-      >
-        <div
-          style={{ textAlign: "left", marginBottom: "0px", marginTop: "40px" }}
-        >
-          <h1
-            style={{ fontSize: "50px", fontWeight: "bold", lineHeight: "69px" }}
-          >
-            <AnimatedText text="Best Solution For" delay={baseDelay} />
+      <div className="flex justify-center items-center h-screen w-full">
+        <div className="w-full lg:w-[30%] mx-[10%] lg:text-left  mb-8 lg:mb-0">
+          <h1 className="text-4xl lg:text-6xl font-bold leading-10 lg:leading-14">
+            <AnimatedText text="Best Solution For" delay={0.2} />
             <br />
-            <AnimatedText text="Your" delay={baseDelay + 0.5} />
-            <AnimatedText text=" " delay={baseDelay + 1} gradient={true} />
+            <AnimatedText text="Your" delay={0.7} />
+            <AnimatedText text=" " delay={1.2} gradient={true} />
             <br />
-            <div style={{ marginTop: "4px" }}>
-              <AnimatedText text="Startup:" delay={baseDelay + 1.5} />
+            <div className="mt-1">
+              <AnimatedText text="Startup:" delay={1.7} />
             </div>
           </h1>
           <motion.p
-            style={{
-              marginTop: "30px",
-              marginBottom: "30px",
-              fontSize: "12px",
-              opacity: "0.7",
-            }}
+            className="mt-4 lg:mt-6 text-sm lg:text-base opacity-70"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3.5, duration: 0.4 }}
           >
-            Discover a world of amazing products at our E-commerce <br />
+            Discover a world of amazing products at Our E-commerce <br />
             store. Shop with confidence and find the perfect items <br />
             for your lifestyle.
           </motion.p>
@@ -88,26 +71,17 @@ function Home() {
             transition={{ delay: 3.7, duration: 0.4 }}
           >
             <motion.button
-              style={{
-                padding: "10px 20px",
-                background: "linear-gradient(60deg, #e0559e, #4842c8)",
-                color: "#fff",
-                border: "none",
-                borderRadius: "5px",
-                boxShadow: "0 2px 4px rgba(226, 233, 239, 0.8)", // Box shadow with the color #e2e9ef
-                marginTop: "20px",
-              }}
+              className="mt-4 lg:mt-6 px-8 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-800 text-white shadow-md"
               initial={{ x: -500 }}
               animate={{ x: 0 }}
               transition={{ delay: 3.7, duration: 0.7 }}
-              className=" my-[0px] font-bold text-[#fff] px-[30px] py-[11px] rounded-[7px]"
             >
               Get Started
             </motion.button>
           </motion.a>
         </div>
         <motion.div
-          style={{ marginBottom: "2px" }}
+          className="hidden lg:block w-1/3 mt-4 lg:mt-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 2 }}
@@ -115,11 +89,10 @@ function Home() {
           <img
             src={Illustration2}
             alt="Illustration"
-            width="650px"
-            height="1100px"
+            className="w-full h-auto"
           />
         </motion.div>
-      </Stack>
+      </div>
     </React.Fragment>
   );
 }

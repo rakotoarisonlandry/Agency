@@ -23,7 +23,7 @@ function ServiceParent(){
   
     return(
         <div className="min-h-screen bg-[#f7f7f7]" style={{ width: "100%" }}>
-        <motion.img
+        {/* <motion.img
           src={blob}
           className="absolute top-[110%] left-[5%] w-[20%]"
           style={{ zIndex: "0" }}
@@ -33,9 +33,9 @@ function ServiceParent(){
             y: [0, 20, 0], // L'animation commence à y = 0, monte à y = 20, puis revient à 0
           }}
           transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        />
+        /> */}
 
-        <motion.img
+        {/* <motion.img
           src={blob1}
           className="absolute top-[160%] left-[79%] w-[20%] "
           style={{ zIndex: "0" }}
@@ -67,7 +67,7 @@ function ServiceParent(){
             y: [0, 20, 0], // L'animation commence à y = 0, monte à y = 20, puis revient à 0
           }}
           transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        ></motion.img>
+        ></motion.img> */}
         <Service />
       </div>
     )
