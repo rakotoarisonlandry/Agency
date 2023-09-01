@@ -3,6 +3,20 @@ import logo from "../assets/image/logo.png";
 import { useThemeContext } from "../Tool/ThemeContext";
 import { motion } from "framer-motion";
 function Header() {
+  const options = [
+    {
+      icon: "sunny",
+      text: "light",
+    },
+    {
+      icon: "moon",
+      text: "dark ",
+    },
+    {
+      icon: "desktop-outline",
+      text: "system",
+    },
+  ];
   const { toggleTheme, theme } = useThemeContext();
 
   const isLightTheme = theme === "light";
@@ -84,10 +98,15 @@ function Header() {
         >
           <a href="#">Contact</a>
         </motion.li>
-        <li>
-          <button className="w-8 h-8 leading-9 text-xl rounded-full m-1 text-sky-600 " >
-            <ion-icon name="sunny"></ion-icon>
-          </button>
+        <li className="fixed top-[35px] right-10 duration-100  dark:bg-slate-700 bg-gray-100 rounded-full">
+          {options?.map((opt) => (
+            <button
+              key={opt.text} 
+              className="w-8 h-8 leading-9 text-xl rounded-full m-1 text-sky-600 "
+            >
+              <ion-icon name={opt.icon}></ion-icon>
+            </button>
+          ))}
         </li>
       </ul>
     </div>
