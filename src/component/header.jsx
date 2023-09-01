@@ -20,16 +20,18 @@ function Header() {
 
   return (
     <div
-      className={`flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 ${
+      className={`dark:bg-slate-900 dark:Text-slate-900  flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 ${
         isLightTheme ? "bg-light" : "bg-dark"
       }`}
     >
       <motion.div
         className="flex items-center text-xl  md:text-2xl pt-6 text-[#00f] font-bold space-x-2"
-        style={{ marginLeft: "14%" }}
+        style={{ marginLeft: "19%", marginBottom: "2%" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.4 }}
+        dark:text-gray-100
+        dark:bg-scale-900
       >
         <img src={logo} alt="Logo" style={{ width: "40px" }} />
         <span>Agency</span>
@@ -43,7 +45,7 @@ function Header() {
         </button>
       )}
       <ul
-        className={`flex flex-col mx-[40%] pt-[30px] px-[30px] md:flex-row space-y-4 md:space-y-0 md:space-x-8 font-bold opacity-80 text-[#fff] ${
+        className={`flex flex-col mx-[40%] pt-[30px] text-[19px] px-[30px] md:flex-row space-y-4 md:space-y-0 md:space-x-8 font-bold opacity-80 text-[#fff] ${
           isLightTheme ? "text-light" : "text-dark"
         } ${isListVisible ? "md:flex" : "hidden"}`}
       >
@@ -82,6 +84,11 @@ function Header() {
         >
           <a href="#">Contact</a>
         </motion.li>
+        <li>
+          <button className="w-8 h-8 leading-9 text-xl rounded-full m-1 text-sky-600 " >
+            <ion-icon name="sunny"></ion-icon>
+          </button>
+        </li>
       </ul>
     </div>
   );

@@ -42,7 +42,7 @@ function AnimatedText({ text, delay, gradient }) {
 function Home() {
   return (
     <React.Fragment>
-      <div className="flex justify-center items-center h-screen w-full">
+      <div className="flex justify-center items-center h-screen w-full dark:bg-slate-900  dark:text-gray-100">
         <div className="w-full lg:w-[30%] mx-[10%] lg:text-left  mb-8 lg:mb-0">
           <h1 className="text-4xl lg:text-6xl font-bold leading-10 lg:leading-14">
             <AnimatedText text="Best Solution For" delay={0.2} />
