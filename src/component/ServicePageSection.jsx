@@ -38,6 +38,7 @@ function ServicePageComponent() {
       >
         {options?.map((opt) => (
           <Card
+          
             sx={{
               marginBottom: 10,
               marginRight: 5,
@@ -53,9 +54,9 @@ function ServicePageComponent() {
                 spacing={2}
                 alignItems="center"
                 justifyContent="center"
-                key={opt.id}
+                
               >
-                <Grid item>
+                <Grid item key={opt.id}>
                   <TaskAltIcon
                     style={{
                       color: "#f56ab6",

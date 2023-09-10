@@ -3,7 +3,7 @@ import logo from "../assets/image/logo.png";
 import { useThemeContext } from "../Tool/ThemeContext";
 import { motion } from "framer-motion";
 function Header() {
-  const [ThemeContext,setTheme] = useState("light")
+  const [ThemeContext,setTheme] = useState("darkens")
   const options = [
     {
       icon: "sunny",
@@ -11,7 +11,7 @@ function Header() {
     },
     {
       icon: "moon",
-      text: "dark ",
+      text: "darkens ",
     },
     {
       icon: "desktop-outline",

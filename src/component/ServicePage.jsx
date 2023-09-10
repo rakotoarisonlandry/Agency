@@ -6,7 +6,28 @@ import ServicePageSectionOne from "./ServicePageSectionOne";
 
 
 function ServicePage() {
-  
+  const options = [
+    {
+      id: "1",
+      texteHeader: " Free Support 24 Hours",
+      text: "Lorem ipsum dolor",
+    },
+    {
+      id: "2",
+      texteHeader: " Free Support 24 Hours",
+      text: "Lorem ipsum dolor",
+    },
+    {
+      id: "3",
+      texteHeader: " Free Support 24 Hours",
+      text: "Lorem ipsum dolor",
+    },
+    {
+      id: "4",
+      texteHeader: " Free Support 24 Hours",
+      text: "Lorem ipsum dolor",
+    },
+  ];
   return (
     <React.Fragment>
       <Stack
@@ -18,7 +39,8 @@ function ServicePage() {
         alignItems="center"
         justifyContent="center"
       >
-        <Card sx={{ marginBottom: 5, marginRight: 5, marginTop: 5 ,paddingY:0,paddingX:1.2 ,width:"26%",backgroundColor:"rgba(239,239,239, 0.5)"}}>
+        {options?.map((opt) => (
+        <Card key={opt.id} sx={{ marginBottom: 5, marginRight: 5, marginTop: 5 ,paddingY:0,paddingX:1.2 ,width:"26%",backgroundColor:"rgba(239,239,239, 0.5)"}}>
           <CardContent>
             <Grid
               container
@@ -31,10 +53,10 @@ function ServicePage() {
               </Grid>
               <Grid item>
                 <Typography variant="h5" component="h2" style={{fontSize:"25px" ,paddingLeft:"8px",paddingRight:"8px" ,fontWeight:"bolder"}} >
-                  Create Idea Business
+                {opt.texteHeader}
                 </Typography>
                 <Typography variant="h6" component="h6" style={{fontSize:"17px" ,paddingLeft:"8px" ,opacity:"0.7"}}>
-                  Lorem ipsum dolor
+                {opt.text}
                 </Typography>
               </Grid>
               <Grid item>
@@ -43,6 +65,7 @@ function ServicePage() {
             </Grid>
           </CardContent>
         </Card>
+        ))}
         {/* <ServicePageSectionOne /> */}
       </Stack>
       {/* <ServicePageComponent /> */}
