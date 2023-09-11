@@ -3,7 +3,7 @@ import logo from "../assets/image/logo.png";
 import { useThemeContext } from "../Tool/ThemeContext";
 import { motion } from "framer-motion";
 function Header() {
-  const [ThemeContext,setTheme] = useState("light")
+  const [theme,setTheme] = useState("system")
   const options = [
     {
       icon: "sunny",
@@ -18,7 +18,7 @@ function Header() {
       text: "system",
     },
   ];
-  const { toggleTheme, theme } = useThemeContext();
+  const { toggleTheme, utheme } = useThemeContext();
 
   const isLightTheme = theme === "light";
 
@@ -103,7 +103,8 @@ function Header() {
           {options?.map((opt) => (
             <button
               key={opt.text} 
-              className={`w-8 h-8 leading-9 text-xl rounded-full m-1 ${ThemeContext === opt.text && "text-sky-600"} `}
+              onClick={() => setTheme(opt.text)}
+              className={`w-8 h-8 leading-9 text-xl rounded-full m-1 ${theme === opt.text && "text-sky-600"} `}
             >
               <ion-icon name={opt.icon}></ion-icon>
             </button>
