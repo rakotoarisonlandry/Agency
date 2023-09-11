@@ -6,6 +6,7 @@ function ServicePageSectionOne() {
   return (
     <React.Fragment>
       <Card
+      className="dark:bg-[#1c4e71]  dark:text-gray-100"
         sx={{
           marginBottom: 5,
           marginRight: 5,

@@ -22,7 +22,7 @@ function ServiceParent(){
     }, []);
   
     return(
-        <div className="min-h-screen bg-[#f7f7f7]" style={{ width: "100%" }}>
+        <div className="min-h-screen " style={{ width: "100%" }}>
         {/* <motion.img
           src={blob}
           className="absolute top-[110%] left-[5%] w-[20%]"

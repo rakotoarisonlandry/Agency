@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, CardContent, Typography, Stack, Grid } from "@mui/material";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
-import ServicePageComponent from "./ServicePageSection";
 import ServicePageSectionOne from "./ServicePageSectionOne";
+import ServicePageSectionTwo from "./servicePageSectionTwo";
 
 function ServicePage() {
     // const options = [
@@ -40,6 +40,7 @@ function ServicePage() {
       >
         <Card
           // key={opt.id}
+          className="dark:bg-[#1c4e71]  dark:text-gray-100"
           sx={{
             marginBottom: 5,
             marginRight: 5,
@@ -50,7 +51,7 @@ function ServicePage() {
             backgroundColor: "rgba(239,239,239, 0.5)",
           }}
         >
-          <CardContent>
+          <CardContent >
             <Grid
               container
               spacing={2}
@@ -67,7 +68,7 @@ function ServicePage() {
                   }}
                 />
               </Grid>
-              <Grid item>
+              <Grid item >
                 <Typography
                   variant="h5"
                   component="h2"
@@ -101,7 +102,7 @@ function ServicePage() {
 
         <ServicePageSectionOne />
       </Stack>
-      {/* <ServicePageComponent /> */}
+      {/* <ServicePageSectionTwo /> */}
     </React.Fragment>
   );
 }
