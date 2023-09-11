@@ -3,8 +3,11 @@ import logo from "../assets/image/logo.png";
 import { useThemeContext } from "../Tool/ThemeContext";
 import { motion } from "framer-motion";
 function Header() {
-  const [theme,setTheme] = useState("system")
+  const [theme,setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
+   )
   const element = document.documentElement;
+  const darkQuery =   window.matchMedia("(prefers-color-scheme : dark)");
   const options = [
     {
       icon: "sunny",
@@ -19,19 +22,40 @@ function Header() {
       text: "system",
     },
   ];
+  function onWindowsMatch(){
+    if(localStorage.theme === "dark" || (!("theme" in localStorage ) && darkQuery.matches) ){
+      element.classList.add("dark")
+    }else{
+      element.classList.remove("dark")
+    }
+  }
   useEffect(() => {
     
     switch (theme) {
       case 'dark':
         element.classList.add('dark')
+        localStorage.setItem("theme" ,"dark")
         break;
         case 'light':
           element.classList.remove('dark')
+          localStorage.setItem("theme" ,"light")
           break;
       default:
+        localStorage.removeItem("theme")
+        onWindowsMatch()
         break;
     }
   },[theme]);
+
+  darkQuery.addEventListener("change" , (e) =>{
+    if(!("theme" in localStorage)){
+      if(e.matches){
+        element.classList.add("dark")
+      }else{
+        element.classList.remove('dark')
+      }
+    }
+  })
   const { toggleTheme, utheme } = useThemeContext();
 
   const isLightTheme = theme === "light";
@@ -55,7 +79,7 @@ function Header() {
     >
       <motion.div
         className="flex items-center text-xl  md:text-2xl pt-6 text-[#00f] font-bold space-x-2"
-        style={{ marginLeft: "19%", marginBottom: "2%" }}
+        style={{ marginLeft: "19%", marginBottom: "0%" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.4 }}
@@ -113,7 +137,7 @@ function Header() {
         >
           <a href="#">Contact</a>
         </motion.li>
-        <li className="fixed top-[35px] right-10 duration-100  dark:bg-slate-700 bg-gray-100 rounded-full">
+        <li className="fixed top-[26px] right-10 duration-100  dark:bg-[#1c4e71] bg-[#5c45c3] rounded-full">
           {options?.map((opt) => (
             <button
               key={opt.text} 
