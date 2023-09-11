@@ -98,7 +98,7 @@ function ServicePageComponent() {
             </CardContent>
           </Card>
         ))}
-        {/* <ServicePageSectionTwo/> */}
+        <ServicePageSectionTwo/>
       </Stack>
     </>
   );

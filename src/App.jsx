@@ -30,16 +30,16 @@ function App() {
         <Sponsor />
       </div>
 
-      <div>
+      <div className="dark:bg-slate-900  dark:text-gray-100">
         <ServiceParent />
       </div>
 
-      <div className="min-h-screen bg-[#f7f7f7]">
+      <div className="min-h-screen bg-[#f7f7f7] dark:bg-slate-900  dark:text-gray-100">
         <Team />
       </div>
 
       <div
-        className="min-h-screen bg-[#f7f7f7] "
+        className="min-h-screen bg-[#f7f7f7] dark:bg-slate-900  dark:text-gray-100"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundPosition: "bottom",

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/image/logo.png";
 import { useThemeContext } from "../Tool/ThemeContext";
 import { motion } from "framer-motion";
 function Header() {
   const [theme,setTheme] = useState("system")
+  const element = document.documentElement;
   const options = [
     {
       icon: "sunny",
@@ -11,13 +12,26 @@ function Header() {
     },
     {
       icon: "moon",
-      text: "darkens",
+      text: "dark",
     },
     {
       icon: "desktop-outline",
       text: "system",
     },
   ];
+  useEffect(() => {
+    
+    switch (theme) {
+      case 'dark':
+        element.classList.add('dark')
+        break;
+        case 'light':
+          element.classList.remove('dark')
+          break;
+      default:
+        break;
+    }
+  },[theme]);
   const { toggleTheme, utheme } = useThemeContext();
 
   const isLightTheme = theme === "light";
