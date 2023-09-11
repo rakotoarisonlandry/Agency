@@ -26,7 +26,7 @@ function App() {
           <Home />
         </div>
 
-        <div>
+        <div className="dark:bg-white  dark:text-gray-100">
           <Sponsor />
         </div>
 
