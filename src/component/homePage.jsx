@@ -89,7 +89,7 @@ function Home() {
           <img
             src={Illustration2}
             alt="Illustration"
-            className="w-full h-auto"
+            className="w-[100%] h-[15000%]"
           />
         </motion.div>
       </div>

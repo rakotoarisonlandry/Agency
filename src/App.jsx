@@ -12,9 +12,9 @@ import ServiceParent from "./component/ServiceParent";
 function App() {
   return (
     <ThemeProvider>
-      <div className="dark:bg-slate-900  dark:text-gray-100">
+      <div className="dark:bg-slate-900 bg-[rgba(255,255,0,0.3)] dark:text-gray-100">
         <div
-          className="min-h-screen bg-[#f7f7f7]"
+          className="min-h-screen "
           style={{
             backgroundImage: `url(${illu})`,
             backgroundPosition: "0 -300px",
@@ -26,7 +26,7 @@ function App() {
           <Home />
         </div>
 
-        <div className="dark:bg-white  dark:text-gray-100">
+        <div className="dark:bg-white   dark:text-gray-100">
           <Sponsor />
         </div>
 
@@ -34,12 +34,12 @@ function App() {
           <ServiceParent />
         </div>
 
-        <div className="min-h-screen bg-[#f7f7f7] dark:bg-slate-900  dark:text-gray-100">
+        <div className="min-h-screen  dark:bg-slate-900  dark:text-gray-100">
           <Team />
         </div>
 
         <div
-          className="min-h-screen bg-[#f7f7f7] dark:bg-slate-900  dark:text-gray-100"
+          className="min-h-screen  dark:bg-slate-900  dark:text-gray-100"
           style={{
             backgroundImage: `url(${bg})`,
             backgroundPosition: "bottom",
