@@ -5,28 +5,6 @@ import ServicePageSectionOne from "./ServicePageSectionOne";
 import ServicePageSectionTwo from "./servicePageSectionTwo";
 
 function ServicePage() {
-    // const options = [
-    //   {
-    //     id: "1",
-    //     texteHeader: " Free Support 24 Hours",
-    //     text: "Lorem ipsum dolor",
-    //   },
-    //   {
-    //     id: "2",
-    //     texteHeader: " Free Support 24 Hours",
-    //     text: "Lorem ipsum dolor",
-    //   },
-    //   {
-    //     id: "3",
-    //     texteHeader: " Free Support 24 Hours",
-    //     text: "Lorem ipsum dolor",
-    //   },
-    //   {
-    //     id: "4",
-    //     texteHeader: " Free Support 24 Hours",
-    //     text: "Lorem ipsum dolor",
-    //   },
-    // ];
   return (
     <React.Fragment>
       <Stack
@@ -39,7 +17,6 @@ function ServicePage() {
         justifyContent="center"
       >
         <Card
-          // key={opt.id}
           className="dark:bg-[#1c4e71]  dark:text-gray-100"
           sx={{
             marginBottom: 5,

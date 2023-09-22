@@ -9,8 +9,8 @@ function Team() {
         direction="row"
         alignItems="flex-end"
         justifyContent="center"
-        spacing="220px"
-        marginTop="100px"
+        spacing="200px"
+        marginTop="-100px"
       >
         <div style={{ textAlign: "left", marginBottom: "70px" }}>
           <p
@@ -25,7 +25,7 @@ function Team() {
             Our Team
           </p>
           <h1
-            style={{ fontSize: "45px", fontWeight: "bold", lineHeight: "1.2" }}
+            style={{ fontSize: "61px", fontWeight: "bold", lineHeight: "1.2" }}
           >
             Discussing Your 
             <br /> <span style={{ background: "linear-gradient(60deg, #e0559e, #4842c8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",paddingRight:"10px", }}>Project</span>: Our Team

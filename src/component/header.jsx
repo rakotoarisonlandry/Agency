@@ -79,14 +79,14 @@ function Header() {
     >
       <motion.div
         className="flex items-center text-xl  md:text-2xl pt-6 text-[#00f] font-bold space-x-2"
-        style={{ marginLeft: "19%", marginBottom: "0%" }}
+        style={{ marginLeft: "14%", marginBottom: "0%" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.4 }}
         dark:text-gray-100
         dark:bg-scale-900
       >
-        <img src={logo} alt="Logo" style={{ width: "40px" }} />
+        <img src={logo} alt="Logo" style={{ width: "50px" }} />
         <span>Agency</span>
       </motion.div>
       {isButtonVisible && (

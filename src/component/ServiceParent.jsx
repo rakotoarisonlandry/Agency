@@ -23,51 +23,6 @@ function ServiceParent(){
   
     return(
         <div className="min-h-screen " style={{ width: "100%" }}>
-        {/* <motion.img
-          src={blob}
-          className="absolute top-[110%] left-[5%] w-[20%]"
-          style={{ zIndex: "0" }}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{
-            opacity: [1], // L'opacité change de 0 à 1
-            y: [0, 20, 0], // L'animation commence à y = 0, monte à y = 20, puis revient à 0
-          }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        /> */}
-
-        {/* <motion.img
-          src={blob1}
-          className="absolute top-[160%] left-[79%] w-[20%] "
-          style={{ zIndex: "0" }}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{
-            opacity: [1], // L'opacité change de 0 à 1
-            y: [0, 20, 0], // L'animation commence à y = 0, monte à y = 20, puis revient à 0
-          }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        ></motion.img>
-        <motion.img
-          src={blob2}
-          className="absolute top-[180%] left-[5%] w-[20%] "
-          style={{ zIndex: "0" }}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{
-            opacity: [1], // L'opacité change de 0 à 1
-            y: [0, 20, 0], // L'animation commence à y = 0, monte à y = 20, puis revient à 0
-          }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        ></motion.img>
-        <motion.img
-          src={blob3}
-          className="absolute top-[190%] left-[40%] w-[29%] "
-          style={{ zIndex: "0" }}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{
-            opacity: [1], // L'opacité change de 0 à 1
-            y: [0, 20, 0], // L'animation commence à y = 0, monte à y = 20, puis revient à 0
-          }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        ></motion.img> */}
         <Service />
       </div>
     )

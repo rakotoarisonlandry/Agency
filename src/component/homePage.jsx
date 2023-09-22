@@ -2,7 +2,6 @@ import React from "react";
 import Illustration2 from "../assets/image/Home.svg";
 import { motion } from "framer-motion";
 
-
 function AnimatedText({ text, delay, gradient }) {
   return (
     <motion.span
@@ -44,7 +43,7 @@ function Home() {
     <React.Fragment>
       <div className="flex justify-center items-center h-screen w-full dark:bg-slate-900  dark:text-gray-100">
         <div className="w-full lg:w-[30%] mx-[10%] lg:text-left  mb-8 lg:mb-0">
-          <h1 className="text-4xl lg:text-6xl font-bold leading-10 lg:leading-14">
+          <h1 className="text-[61px] lg:text-6xl font-bold leading-10 lg:leading-14">
             <AnimatedText text="Best Solution For" delay={0.2} />
             <br />
             <AnimatedText text="Your" delay={0.7} />
@@ -89,7 +88,8 @@ function Home() {
           <img
             src={Illustration2}
             alt="Illustration"
-            className="w-[100%] h-[15000%]"
+            width="800px"
+            height="540px"
           />
         </motion.div>
       </div>

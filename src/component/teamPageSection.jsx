@@ -8,7 +8,7 @@ function TeamSection() {
         <img
           src={Illustration2}
           alt="Illustration"
-          width="540px"
+          width="800px"
           height="540px"
         />
       </div>
