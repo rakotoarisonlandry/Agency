@@ -2,6 +2,7 @@ import { Stack } from "@mui/material";
 import React from "react";
 import IllustrationForm from "../assets/image/process.svg";
 import Validation from "./formValidation";
+import { motion } from "framer-motion";
 
 function Form() {
   return (
@@ -10,15 +11,15 @@ function Form() {
         direction="row"
         alignItems="center"
         justifyContent="center"
-        spacing={16} // Adjust the spacing as needed
-        paddingTop="150px"
+        spacing={40} // Adjust the spacing as needed
+        paddingTop="200px"
         width="100%"
       >
-        <div style={{ width: "480px" }}>
+        <div style={{ width: "550px" }}>
           <img
             src={IllustrationForm}
             alt="Illustration"
-            width="90%"
+            width="200%"
             height="auto"
           />
         </div>
