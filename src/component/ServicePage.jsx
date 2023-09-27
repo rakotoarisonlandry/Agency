@@ -7,28 +7,28 @@ import Reveal from "./reveal";
 function ServicePage() {
   return (
     <React.Fragment>
-      <Stack
-        spacing={{ xs: 1, sm: 2 }}
-        direction="row"
-        useFlexGap
-        flexWrap="wrap"
-        marginTop="35px"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <Card
-          className="dark:bg-[#1c4e71]  dark:text-gray-100"
-          sx={{
-            marginBottom: 5,
-            marginRight: 5,
-            marginTop: 5,
-            paddingY: 0,
-            paddingX: 1.2,
-            width: "24%",
-            backgroundColor: "rgba(239,239,239, 0.5)",
-          }}
+      <Reveal>
+        <Stack
+          spacing={{ xs: 1, sm: 2 }}
+          direction="row"
+          useFlexGap
+          flexWrap="wrap"
+          marginTop="35px"
+          alignItems="center"
+          justifyContent="center"
         >
-          <Reveal>
+          <Card
+            className="dark:bg-[#1c4e71]  dark:text-gray-100"
+            sx={{
+              marginBottom: 5,
+              marginRight: 5,
+              marginTop: 5,
+              paddingY: 0,
+              paddingX: 1.2,
+              width: "24%",
+              backgroundColor: "rgba(239,239,239, 0.5)",
+            }}
+          >
             <CardContent>
               <Grid
                 container
@@ -76,11 +76,11 @@ function ServicePage() {
                 </Grid>
               </Grid>
             </CardContent>
-          </Reveal>
-        </Card>
+          </Card>
 
-        <ServicePageSectionOne />
-      </Stack>
+          <ServicePageSectionOne />
+        </Stack>
+      </Reveal>
       {/* <ServicePageSectionTwo /> */}
     </React.Fragment>
   );
