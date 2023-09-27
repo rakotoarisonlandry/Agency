@@ -1,7 +1,8 @@
 import { Stack } from "@mui/system";
 import { Box } from "@mui/material";
 import React from "react";
-import { motion } from "framer-motion"; // Import de framer-motion
+import Reveal from "./reveal";
+import { motion } from "framer-motion";
 import Google from "../assets/image/Google.png";
 import Netflix from "../assets/image/netflix.png";
 import Slack from "../assets/image/Slack.png";
@@ -43,7 +44,7 @@ function Sponsor() {
 
   return (
     <React.Fragment>
-      <Section >
+      <Section>
         <Stack
           direction="row"
           justifyContent="center"
@@ -51,21 +52,23 @@ function Sponsor() {
           paddingLeft="100px"
         >
           {sponsors.map((sponsor) => (
-            <Box
-              key={sponsor.id}
-              sx={{ marginRight: 20, display: "flex", alignItems: "center" }}
-            >
-              <a href={sponsor.link}>
-                <motion.img
-                  src={sponsor.image}
-                  alt={sponsor.id}
-                  style={{ width: "120px" }}
-                  initial="initial"
-                  whileHover="hover"
-                  variants={imageVariants}
-                />
-              </a>
-            </Box>
+            <Reveal>
+              <Box
+                key={sponsor.id}
+                sx={{ marginRight: 20, display: "flex", alignItems: "center" }}
+              >
+                <a href={sponsor.link}>
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.id}
+                    style={{ width: "120px" }}
+                    initial="initial"
+                    whileHover="hover"
+                    variants={imageVariants}
+                  />
+                </a>
+              </Box>
+            </Reveal>
           ))}
         </Stack>
       </Section>

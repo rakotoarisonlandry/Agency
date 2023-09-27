@@ -71,8 +71,8 @@ function Home() {
           >
             <motion.button
               className="mt-4 lg:mt-6 px-8 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-800 text-white shadow-md"
-              initial={{ x: -500 }}
-              animate={{ x: 0 }}
+              initial={{ opacity:0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 3.7, duration: 0.7 }}
             >
               Get Started
