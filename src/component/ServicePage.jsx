@@ -4,7 +4,7 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import ServicePageSectionOne from "./ServicePageSectionOne";
 import ServicePageSectionTwo from "./servicePageSectionTwo";
 import Reveal from "./reveal";
-function ServicePage() {
+function ServicePage(){
   return (
     <React.Fragment>
       <Reveal>
@@ -81,9 +81,7 @@ function ServicePage() {
           <ServicePageSectionOne />
         </Stack>
       </Reveal>
-      {/* <ServicePageSectionTwo /> */}
     </React.Fragment>
   );
 }
-
 export default ServicePage;
